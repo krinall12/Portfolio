@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Krinal Khakharia</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>A passionate Computing Science student at Thompson Rivers University. <br>
+            Let's create something impactful together!
+            </p>
+            <div class="home-sci">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+        <div class="home-img">
+            <img src="profile pic.webp" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profile pic.webp" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Frontend Web Developer!</h4>
+            <p>I am a second-year Computing Science student at Thompson Rivers University, 
+                passionate about technology and continuous learning. Proficient in HTML, CSS, 
+                JavaScript, Python, and Django, I create responsive web designs and scalable 
+                applications. With a strong grasp of data structures and algorithms, 
+                I focus on writing efficient code and look forward to gaining real-world experience.</p>
+            <a href="#services" class="btn-box">My Services</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code' style="color: #00eeff;"></i>
+                    <h2>Web Development</h2>
+                    <p>I create responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks like Django.</p>
+                </div>
+                <div>
+                    <i class='bx bx-crop' style="color: #00eeff;"></i>
+                    <h2>Adobe Illustrator</h2>
+                    <p>I design logos, illustrations, icons, and digital artwork with precision and scalability with a powerful vector graphics software.</p>
+                </div>
+                <div>
+                    <i class='bx bxl-apple' style="color: #00eeff;"></i>
+                    <h2>App Development</h2>
+                    <p>I develop cross-platform mobile applications using frameworks like Android Studio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Portfolio</span></h1>
+            <div class="portfolio-list">
+                <div class="project">
+                    <img src="travel-agency.webp" alt="Travel Agency Website">
+                    <div class="layer">
+                        <h3>Travel Agency Website</h3>
+                        <p>Developed a front-end website for a travel agency using HTML, CSS, and JavaScript. 
+                            Implemented multimedia elements, image maps, navigation menus, and forms to enhance user experience.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="portfolio-website.webp" alt="Responsive Portfolio Website">
+                    <div class="layer">
+                        <h3>Responsive Portfolio Website</h3>
+                        <p>Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills. 
+                            Implemented a responsive design using media queries and Flexbox/Grid for optimal viewing on different devices.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="currency-converter.webp" alt="Currency Converter Mobile App">
+                    <div class="layer">
+                        <h3>Currency Converter Mobile App</h3>
+                        <p>Developed an Android mobile application using Android Studio and Java for real-time currency conversion. 
+                            Integrated third-party APIs to fetch exchange rates and update conversions dynamically.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="book-website.webp" alt="Software Architecture & Design - Book Website">
+                    <div class="layer">
+                        <h3>Software Architecture & Design - Book Website</h3>
+                        <p>Designed the software architecture for an online book-selling platform, focusing on scalability and maintainability. 
+                            Applied software design patterns and UML diagrams to model the system structure and interactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact <span>Me</span></h1>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="messageText" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-box">Send Message</button>
+                </form><br>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Krinal Khakharia. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
