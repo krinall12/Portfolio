@@ -42,7 +42,7 @@ const db = new sqlite3.Database('./messages.db', (err) => {
 
 // Default Route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
 // Save Contact Form Data
