@@ -6,7 +6,10 @@ const app = express();
 app.use(bodyParser.json());
 
 // Replace with your Google Apps Script URL
-const googleScriptUrl = 'Yhttps://script.google.com/macros/s/AKfycbz-0SoaO6v6tPVaw-atZSDARykryM-WSjkGGnImilKvP13Bv5t6yM3cZ3519skALY047A/exec';
+const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbxDotHIrnfMhvpYJCamWH1yIdsvA5fs8MXsMbhH5bTI26CKoo-6zxDRVOKiMKsbOHu1BQ/exec';
+
+// Replace with your Spreadsheet ID
+const spreadsheetId = '1dWExi_hHXmM8E1C5Qh5qlMDbDf-JoMesAZ0kqJ3TluU';
 
 app.post('/api', async (req, res) => {
   const { name, email, message } = req.body;
@@ -21,6 +24,7 @@ app.post('/api', async (req, res) => {
       name,
       email,
       message,
+      spreadsheetId, // Pass the spreadsheet ID to the script
     });
 
     if (response.data.success) {
