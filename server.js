@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Replace with your Google Apps Script URL
-const googleScriptUrl = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbz-0SoaO6v6tPVaw-atZSDARykryM-WSjkGGnImilKvP13Bv5t6yM3cZ3519skALY047A/exec';
 
 app.post('/api', async (req, res) => {
   const { name, email, message } = req.body;
