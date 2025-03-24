@@ -270,6 +270,88 @@ body {
     margin-bottom: 20px;
 }
 
+/* Education Section */
+.education {
+    padding: 80px 10%;
+}
+
+.education-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.education-list div {
+    background: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+}
+
+.education-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #00eeff;
+}
+
+.education-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.education-list div h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.education-list div p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Certificates Section */
+.certificates {
+    padding: 80px 10%;
+}
+
+.certificates-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.certificates-list div {
+    background: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+}
+
+.certificates-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #00eeff;
+}
+
+.certificates-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.certificates-list div p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
 /* Portfolio Section */
 .portfolio {
     padding: 80px 10%;

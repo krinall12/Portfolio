@@ -89,3 +89,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Add animations for the new sections
+const educationSection = document.querySelector(".education");
+const certificatesSection = document.querySelector(".certificates");
+
+observer.observe(educationSection);
+observer.observe(certificatesSection);
